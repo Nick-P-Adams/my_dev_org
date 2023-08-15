@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="https://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Users</fullName>
+    <active>true</active>
+    <label>All Users</label>
+</RecordType>

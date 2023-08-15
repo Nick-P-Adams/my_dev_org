@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="https://soap.sforce.com/2006/04/metadata">
+    <fullName>Book_URL__c</fullName>
+    <description>A link to the book&apos;s website, where to buy the book, or maybe a page describing the book. Whatever you feel like using for the book&apos;s URL.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>URL to External Website for Book</inlineHelpText>
+    <label>Book_URL</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Url</type>
+</CustomField>

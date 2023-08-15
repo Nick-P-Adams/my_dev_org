@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="https://soap.sforce.com/2006/04/metadata">
+    <fullName>Book_Summary__c</fullName>
+    <description>Description of the book&apos;s contents</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Summary of Book Contents</inlineHelpText>
+    <label>Book_Summary</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

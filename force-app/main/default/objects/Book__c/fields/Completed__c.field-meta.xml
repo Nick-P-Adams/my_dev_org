@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="https://soap.sforce.com/2006/04/metadata">
+    <fullName>Completed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Determine whether or not you have complete reading this book</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Finished Reading This Book?</inlineHelpText>
+    <label>Completed</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
