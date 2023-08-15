@@ -1,0 +1,22 @@
+.lgc-bg {
+    background-color: rgb(242 242 242);
+}
+
+.lgc-bg-inverse {
+    background-color: rgb(22 50 92);
+}
+
+.c-container {
+    margin: 0px 0 20px;
+}
+
+.header-column {
+    padding: 0 2rem;
+}
+
+.field-title {
+    font-size: .75rem;
+    line-height: 1.25;
+    color: #54698d;
+    margin-bottom: .25rem;
+}
