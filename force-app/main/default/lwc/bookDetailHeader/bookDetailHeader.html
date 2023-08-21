@@ -1,24 +1,11 @@
 <template>
-    <div class="slds-p-around_medium lgc-bg">
-        <lightning-tile label="Bruce Wayne" href="/bruce.html" type="media">
-            <lightning-avatar slot="media" src="https://www.lightningdesignsystem.com/assets/images/avatar1.jpg" fallback-icon-name="standard:person_account" alternative-text="Bruce Wayne"></lightning-avatar>
-            <ul class="slds-list_horizontal slds-has-dividers_right">
-                <li class="slds-item">Billionaire, Gotham City</li>
-                <li class="slds-item">Dark Knight</li>
-            </ul>
-        </lightning-tile>
-    </div>
-    <div>
-        <lightning-layout>
+    <template lwc:if={book.data}>
+        <div class="slds-var-p-around_medium tile-bg">
+            <lightning-tile label="Bruce" href="/bruce.html" type="media">
             <lightning-layout-item padding="around-small">
                 <div class="header-column">
-                    <p class="field-title" title="Field 1">Field 1</p>
-                    <p>Name</p>
-                </div>
-            </lightning-layout-item>
-            <lightning-layout-item padding="around-small">
-                <div class="header-column">
-                    <p class="field-title" title="Field2">Field 2</p>
+                    <li class="slds-item"><p>{name}</p></li>
+                    <li class="slds-item">author name placeholder</li>
                     <p>Eligibility</p>
                 </div>
             </lightning-layout-item>
@@ -38,4 +25,10 @@
             </lightning-layout-item>
         </lightning-layout>
     </div>
+</template>
+    <!--
+    <template lwc:elseif={book.error}>
+        <c-error-panel errors={book.error}></c-error-panel>
+    </template>
+    -->
 </template>
