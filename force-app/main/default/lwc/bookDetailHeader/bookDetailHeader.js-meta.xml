@@ -12,7 +12,7 @@
     <targetConfigs>
         <targetConfig targets="lightning__RecordPage">
             <objects>
-                <object>Book</object>
+                <object>Book__c</object>
             </objects>
         </targetConfig>
     </targetConfigs>

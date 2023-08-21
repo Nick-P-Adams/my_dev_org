@@ -1,34 +1,44 @@
 <template>
     <template lwc:if={book.data}>
         <div class="slds-var-p-around_medium tile-bg">
-            <lightning-tile label="Bruce" href="/bruce.html" type="media">
-            <lightning-layout-item padding="around-small">
-                <div class="header-column">
-                    <li class="slds-item"><p>{name}</p></li>
-                    <li class="slds-item">author name placeholder</li>
-                    <p>Eligibility</p>
-                </div>
-            </lightning-layout-item>
-            <lightning-layout-item padding="around-small">
-                <div class="header-column">
-                    <p class="field-title" title="Field 3">Field 3</p>
-                    <a href="#">Website</a>
-                </div>
-            </lightning-layout-item>
-            <lightning-layout-item padding="around-small">
-                <div class="header-column">
-                    <p class="field-title" title="Field 4">Field 4</p>
-                    <p>
-                        <span title="">Address</span>
-                    </p>
-                </div>
-            </lightning-layout-item>
-        </lightning-layout>
-    </div>
-</template>
-    <!--
+            <lightning-tile label={name} href={website} type="media">
+                <lightning-icon slot="media" icon-name="standard:article"></lightning-icon>
+                <ul class="slds-list_horizontal slds-has-dividers_right">
+                    <li class="slds-item">ISBN# {isbn}</li>
+                    <li class="slds-item">{owner}</li>
+                </ul>
+            </lightning-tile>
+        </div>
+        <div class="layout-bg">
+            <lightning-layout>
+                <lightning-layout-item padding="around-small">
+                    <div class="header-column">
+                        <p class="field-title" title="Author">Author</p>
+                        <p>{author}</p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <div class="header-column">
+                        <p class="field-title" title="Publisher">Publisher</p>
+                        <p>{publisher}</p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <div class="header-column">
+                        <p class="field-title" title="Published Date">Published Date</p>
+                        <p>{published}</p>
+                    </div>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <div class="header-column">
+                        <p class="field-title" title="Completed">Completed</p>
+                        <p>{completed}</p>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </template>
     <template lwc:elseif={book.error}>
         <c-error-panel errors={book.error}></c-error-panel>
     </template>
-    -->
 </template>

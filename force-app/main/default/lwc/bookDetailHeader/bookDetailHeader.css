@@ -1,9 +1,9 @@
-.lgc-bg {
-    background-color: rgb(242 242 242);
+.tile-bg {
+    background-color: rgb(255, 247, 230);
 }
 
-.lgc-bg-inverse {
-    background-color: rgb(22 50 92);
+.layout-bg {
+    background-color: #fff;
 }
 
 .header-column {
