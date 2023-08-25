@@ -7,7 +7,11 @@
     <types>
         <members>*</members>
         <name>CustomObject</name>
-    </types> 
+    </types>
+    <types>
+        <members>*</members>
+        <name>Layout</name>
+    </types>  
     <types>
         <members>*</members>
         <name>ApexComponent</name>

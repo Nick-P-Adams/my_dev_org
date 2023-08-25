@@ -1,3 +1,5 @@
+<!-- Move ISBN to the layout and then add the created by date to the lightning tile -->
+
 <template>
     <template lwc:if={book.data}>
         <div class="slds-var-p-around_medium tile-bg">
@@ -5,7 +7,9 @@
                 <lightning-icon slot="media" icon-name="standard:article"></lightning-icon>
                 <ul class="slds-list_horizontal slds-has-dividers_right">
                     <li class="slds-item">ISBN# {isbn}</li>
-                    <li class="slds-item">{owner}</li>
+                    <li class="slds-item">
+                        <c-owner-record-link class="slds-show slds-is-relative" record-id={owner}></c-owner-record-link>
+                    </li>
                 </ul>
             </lightning-tile>
         </div>

@@ -20,9 +20,9 @@ const fields = [
 export default class BookDetailHeader extends LightningElement {
     @api recordId;
 
-    @wire(getRecord, { recordId: '$recordId', fields})
+    @wire(getRecord, { recordId: '$recordId', fields })
     book;
-
+    
     get name() {
         return this.book.data.fields.Name.value;
     }
